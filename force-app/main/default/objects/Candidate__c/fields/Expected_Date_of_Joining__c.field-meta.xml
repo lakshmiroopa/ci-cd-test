@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expected_Date_of_Joining__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(( ISPICKVAL( Result__c , &apos;Pass&apos;) &amp;&amp; Offer_Made__c == true &amp;&amp; (!ISNULL( Exam_Clear_Date__c )) ), Exam_Clear_Date__c + 30, DATE(0,0,0) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Expected Date of Joining</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

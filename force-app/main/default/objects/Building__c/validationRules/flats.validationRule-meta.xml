@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flats</fullName>
+    <active>true</active>
+    <errorConditionFormula>Number_of_flats__c   &lt; Total_number_of_flats__c</errorConditionFormula>
+    <errorDisplayField>Number_of_flats__c</errorDisplayField>
+    <errorMessage>number of flats must be less than or equal to total number of flats</errorMessage>
+</ValidationRule>

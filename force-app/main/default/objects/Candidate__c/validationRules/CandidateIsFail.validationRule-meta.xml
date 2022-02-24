@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CandidateIsFail</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(( ISPICKVAL( Result__c , &apos;Fail&apos;) &amp;&amp; (! ISNULL( Exam_Clear_Date__c ) )), true, false)</errorConditionFormula>
+    <errorMessage>Exam clear date can not be filled in for failed candidates</errorMessage>
+</ValidationRule>

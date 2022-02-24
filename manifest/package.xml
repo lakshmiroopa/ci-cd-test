@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+   
+    <types>
+        <members>Employee__c.Salary__c</members>
+        <members>Employee__c.Phone__c</members>
+        <members>Candidate__c.Expected_Date_of_Joining__c</members>
+        <members>Candidate__c.Exam_Clear_Date__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Candidate__c</members>
+        <members>Employee__c</members>  
+        <members>Tenant__c</members>    
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Tenant__c</members>
+        <name>CustomTab</name>
+    </types>   
+    <version>52.0</version>
+</Package>
