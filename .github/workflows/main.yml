@@ -8,7 +8,7 @@ jobs:
 
     steps:
      - name: Send a Notification
-        uses: thechetantalwar/teams-notify@v2
+        uses: opsless/ms-teams-github-actions@main
         with:
         teams_webhook_url: ${{ secrets.TEAM_HOOK }}
         message: "Please approve the merge request."
