@@ -6,6 +6,7 @@ on:
   # if something changes in our metadata directory
   push:
     branches: [ sprint/** ]   
+  runs-on: ubuntu-latest
  # send notification to Teams channel using the ms-teams-notification action
     - name: Send Notification to Teams Channel
         uses: jdcargile/ms-teams-notification@v1.3
