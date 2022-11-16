@@ -5,13 +5,9 @@ on: pull_request
 jobs:
   build:
     runs-on: ubuntu-latest
-
-   # send notification to Teams channel using the ms-teams-notification action
-      - name: Send Notification to Teams Channel
-        uses: jdcargile/ms-teams-notification@v1.3
-        with:
-          github-token: ${{ github.token }} # this will use the runner's token.
-          ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
-          notification-summary: "Please approve the merge reuest"
-          notification-color: 28a745
-          timezone: America/Denver
+       with: 
+        github-token: ${{ github.token }}
+        ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+        notification-summary: Whew! Everything is right with the world again! 
+        notification-color: 28a745 
+        timezone: America/Denver 
