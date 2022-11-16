@@ -1,0 +1,17 @@
+name: merge-request-approval
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push to a feature branch that follows our naming convention
+  # if something changes in our metadata directory
+  merge:
+    branches: [ sprint/** ]   
+ # send notification to Teams channel using the ms-teams-notification action
+    - name: Send Notification to Teams Channel
+        uses: jdcargile/ms-teams-notification@v1.3
+        with:
+          github-token: ${{ github.token }} # this will use the runner's token.
+          ms-teams-webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+          notification-summary: "Please approve the merge reuest"
+          notification-color: 28a745
+          timezone: America/Denver
